@@ -2,8 +2,6 @@
     "name": "latex",
     "image": "registry.gitlab.ost.ch:45023/ins-public/latex/devcontainer-ctan",
     "shutdownAction": "stopContainer",
-    "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces,type=bind,consistency=cached",
-    "workspaceFolder": "/workspaces",
     "onCreateCommand": "",
     "customizations": {
         "vscode": {
