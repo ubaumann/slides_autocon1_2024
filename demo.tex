@@ -1,0 +1,35 @@
+\documentclass[aspectratio=169]{beamer}
+% Template: https://www.overleaf.com/latex/templates/pure-minimalistic-a-truly-minimalistic-and-configurable-beamer-theme/hbvwphdxcbhf
+%%%% Theme settings %%%%
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{tikz}
+\usetheme[nofooterlogo, showmaxslides, darkmode]{pureminimalistic}
+
+% Logos
+\renewcommand{\logotitle}{\includegraphics%
+  [width=.6\linewidth]{logos/NAF_Logo.png}}
+\renewcommand{\logoheader}{\includegraphics%
+  [width=.8\linewidth]{logos/NAF_Logo.png}}
+\renewcommand{\logofooter}{}
+
+% Colors
+\definecolor{title}{RGB}{255, 255, 0} % Yellow
+\renewcommand{\beamertitlecolor}{title}
+
+
+\title{How my first Network Automation project failed (and is still in production)}
+\author{Urs Baumann}
+\institute{Swisscom}
+\date{29.05.2024}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}
+    \frametitle{Sample frame title}
+    This is some text in the first frame. This is some text in the first frame. This is some text in the first frame.
+\end{frame}
+
+\end{document}
