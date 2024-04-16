@@ -1,7 +1,7 @@
 % !TEX program = xelatex
 
 \documentclass[aspectratio=169]{beamer}
-% Template: https://www.overleaf.com/latex/templates/pure-minimalistic-a-truly-minimalistic-and-configurable-beamer-theme/hbvwphdxcbhf
+% Template: https://github.com/kai-tub/latex-beamer-pure-minimalistic
 %%%% Theme settings %%%%
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -19,7 +19,7 @@
 \definecolor{title}{RGB}{255, 255, 0} % Yellow
 \renewcommand{\beamertitlecolor}{title}
 
-
+% Code
 \usepackage{listings}
 \usepackage{minted}
 
@@ -33,7 +33,7 @@
 
 
 {
-% set background image for first page
+% Set background image for the first page
 \setbeamertemplate{background}
 {
   \includegraphics[height=\paperheight]{images/AutoCon_0-108.jpg}
@@ -75,44 +75,58 @@
 \end{frame}
 
 
-% \begin{frame}[fragile]
-%   \begin{columns}
-%     \begin{column}{0.3\textwidth}
-%       \begin{minted}{yaml}
-% name: sw01
-% domain_name: lab.ins
-% syslog: 10.10.0.11
-% interfaces:
-% - Loopback0
-% - Mgmt0/0
-% - GigabitEthernet1/0/1
-% bgp:
-% asn: 65000
-% \end{minted}
-%     \end{column}
-%     \begin{column}{0.3\textwidth}
+\note{If you scan the QRCode and there is a security warning please ignore it and enter your credit card details.}
 
-%       \begin{minted}{django}
-% !
-% ! version 17
-% !
-% hostname {{ name }}
-% ip domain name {{ domain_name }}
-% logging server {{ syslog }}
-% !
-% {% for nic in interfaces %}
-% interface {{ nic }}
-% no shutdown
-% !
-% {% endfor %}
-% !
-% {% if bgp %}
-% router bgp {{ bgp.asn }}
-% {% endif %}
-% \end{minted}
-%     \end{column}
-%   \end{columns}
-% \end{frame}
+
+\begin{frame}{How it begun ...}
+  You have automated CCIE Lab deployments. \\ Could you build a ''Staging Robot''?
+  \begin{flushright}
+    \underline{Customer A} (2015)
+  \end{flushright}
+
+\end{frame}
+
+\begin{frame}{A winning team}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+
+      Software Engineer
+
+      \begin{itemize}
+        \item System Engineering background
+        \item ''Hardcore code reviewer''
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.45\textwidth}
+      Network Engineer
+
+      \begin{itemize}
+        \item Basic programming skills
+        \item ''It is working, isn't it?''
+      \end{itemize}
+    \end{column}
+  \end{columns}
+
+  \footnotetext[1]{System Engineer (BSc Student) with a flair for UI joined for UI}
+\end{frame}
+
+
+
+
+
+
+\begin{frame}{Key Points}
+
+  \begin{vfilleditems}
+    \item Don't be afraid of failing
+    \item Do not over-engineer
+    \item Who can maintain this in 5 years?
+    \item Does the customer need this feature or do you want it?
+  \end{vfilleditems}
+
+
+
+\end{frame}
 
 
 \end{document}
