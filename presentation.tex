@@ -136,14 +136,29 @@
 
 \begin{frame}{Event Based}
   % Explain the idea and workflow. Diagram
-  ToDo
+  \begin{vfilleditems}
+    \item No need to know in advance:
+    \begin{vfilleditems}
+      \item Serial Number
+      \item MAC Address
+      \item Model ID
+    \end{vfilleditems}
+    \item Support for different staging areas
+    \item Staging directly at the destination
+  \end{vfilleditems}
 \end{frame}
 
-\note{Explain the idea of event-based, automatic device discovery, device asking for information}
+\note{Explain the idea of event-based, automatic device discovery, device asking for information. In the end, only one staging area was used.}
 
 \begin{frame}{EEM}
   % L2 does not support EEM, Use TCL
-  ToDo
+  Disclamer: Needed support for IOS 12 (no Python, no PnP)
+  \begin{vfilleditems}
+    \item The First idea was to use EEM
+    \item EEM is not supported on L2 devices
+    \item TCL works on all platforms
+    \item TCL has slightly different versions and different libraries
+  \end{vfilleditems}
 \end{frame}
 
 \note{Disclamer: Needed support for IOS 12 (no Python, no PnP)
@@ -267,7 +282,11 @@ label_print:
 
 \begin{frame}{Redesing UI}
 
-  ToDo
+  \begin{vfilleditems}
+    \item Use synergies from other internally developed tools
+    \item SinglePage with react
+    \item Integrate multiple backends in the same UI
+  \end{vfilleditems}
 
 \end{frame}
 
