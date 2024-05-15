@@ -27,7 +27,7 @@
 % Notes
 \setbeamertemplate{note page}{\pagecolor{yellow!5}\insertnote}
 %\setbeameroption{show notes on second screen=right}
-\setbeameroption{show notes}
+% \setbeameroption{show notes}
 
 \title[How my first Network Automation project failed (and is still in production)]{How my first Network Automation project failed \\ (and is still in production)}
 \author{Urs Baumann}
@@ -323,13 +323,14 @@ label_print:
 
 \begin{frame}{Addons}
 
-  \begin{itemize}
+  \begin{vfilleditems}
     \item 1:1 Replace Device
     \item Replacement with a new device
     \item Replace with Stack
+    \item Interface rearrangement
     \item Provision/Deprovison Access port (API triggered from ordering system)
-    \item ToDo \dots
-  \end{itemize}
+    % \item Configuration Tasks
+  \end{vfilleditems}
 
 \end{frame}
 
@@ -362,7 +363,7 @@ label_print:
     \item Exactly what you need vs general
     \item Resource-intensive vs locking
     \item Dependencies
-    \item ToDo \dots
+    \item Integration
   \end{vfilleditems}
 
 \end{frame}
@@ -405,8 +406,8 @@ label_print:
   Customer B
   \begin{itemize}
     \item In production
-    \item Todo: \dots
-    \item Todo: \dots
+    \item Staged around 700 L3 Access Switches
+    \item Around 1'500 workflows executed
   \end{itemize}
 
 
@@ -422,7 +423,8 @@ label_print:
     \item Be prepared to debug the code
     \item Avoid basing on forks
     \item Try to be up to date
-    \item ToDo \dots
+    \item Be prepared to overtake small projects
+    \item Version pinning and testing is key
   \end{vfilleditems}
 
 \end{frame}
@@ -437,6 +439,8 @@ label_print:
     \item Who can maintain this in 5 years?
     \item Does the customer need this feature or do you want it?
     \item No shortcuts
+    \item ''Just'' maintaining needs time
+    \item Engineer fluctuation
   \end{vfilleditems}
 
 \end{frame}
@@ -456,5 +460,15 @@ label_print:
 \end{frame}
 
 \note{This is also not final yet. Want to have some more meat.}
+
+{
+  \setbeamercolor{background canvas}{bg=black}
+  \begin{frame}[plain,c]
+    \begin{center}
+      \Huge \color[rgb]{1,1,1}Questions?
+    \end{center}
+  \end{frame}
+}
+\end{document}
 
 \end{document}
