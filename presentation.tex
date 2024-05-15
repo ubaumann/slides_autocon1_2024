@@ -81,7 +81,7 @@
 \note{If you scan the QRCode and there is a security warning please ignore it and enter your credit card details.}
 
 
-\begin{frame}{How it begun ...}
+\begin{frame}{How it began ...}
   You have automated CCIE Lab deployments. \\ Could you build a ''Staging Robot''?
   \begin{flushright}
     \underline{Customer A} (2015)
@@ -99,7 +99,7 @@
       Software Engineer
 
       \begin{itemize}
-        \item System Engineering background
+        \item System engineering background
         \item ''Hardcore code reviewer''
       \end{itemize}
     \end{column}
@@ -113,7 +113,7 @@
     \end{column}
   \end{columns}
 
-  \footnotetext[1]{System Engineer (BSc Student) with a flair for UI joined for UI}
+  \footnotetext[1]{System Engineer (BSc student) with a flair for UI joined for UI}
 \end{frame}
 
 \note{It was really beneficial this combination.
@@ -138,11 +138,11 @@
   % Explain the idea and workflow. Diagram
   \begin{vfilleditems}
     \item No need to know in advance:
-    \begin{vfilleditems}
+    \begin{itemize}
       \item Serial Number
       \item MAC Address
       \item Model ID
-    \end{vfilleditems}
+    \end{itemize}
     \item Support for different staging areas
     \item Staging directly at the destination
   \end{vfilleditems}
@@ -152,7 +152,7 @@
 
 \begin{frame}{EEM}
   % L2 does not support EEM, Use TCL
-  Disclamer: Needed support for IOS 12 (no Python, no PnP)
+  Disclaimer: Needed support for IOS 12 (no Python, no PnP)
   \begin{vfilleditems}
     \item The First idea was to use EEM
     \item EEM is not supported on L2 devices
@@ -240,8 +240,8 @@ label_print:
   % ...
   \begin{vfilleditems}
     \item Hierarchical Network-Domain variables
-    \item Generate WebForm from Template variables
-    \item Prepare Device Management with SaltStack
+    \item Generate WebForm from template variables
+    \item Prepare device management with SaltStack
     \item Templates and template snippets
   \end{vfilleditems}
 
@@ -357,11 +357,11 @@ label_print:
 
 \note{very quick}
 
-\begin{frame}{DiY or not?}
+\begin{frame}{DIY or not?}
 
   \begin{vfilleditems}
     \item Exactly what you need vs general
-    \item Resource-intensive vs locking
+    \item Resource-intensive vs lock-in
     \item Dependencies
     \item Integration
   \end{vfilleditems}
@@ -400,13 +400,13 @@ label_print:
   \begin{itemize}
     \item Used the Staging Robot until mid-2023
     \item Staged around 9'000 L2/L3 devices
-    \item Around 5'000 PnP OS Upgrades
+    \item Around 5'000 PnP OS upgrades
   \end{itemize}
 
   Customer B
   \begin{itemize}
     \item In production
-    \item Staged around 700 L3 Access Switches
+    \item Staged around 700 L3 access switches
     \item Around 1'500 workflows executed
   \end{itemize}
 
@@ -447,14 +447,14 @@ label_print:
 
 \note{This is also not final yet. Want to have some more meat.}
 
-\begin{frame}{Why do I say the project has failed?}
+\begin{frame}{Why do I think the project has failed?}
 
   \begin{vfilleditems}
-    \item No direct vendor locking but engineer locking
+    \item No direct vendor lock-in but engineer lock-in
     \item No or outdated documentation
-    \item SaltStack is a central component and hard to replace/update
+    \item SaltStack, as a central component, is hard to replace/update
     \item Settings are in many different locations (because of quick wins)
-    \item Project had multiple contributors but only one has the global view
+    \item Project had multiple contributors, but only one has the global view
   \end{vfilleditems}
 
 \end{frame}
